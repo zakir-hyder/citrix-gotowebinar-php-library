@@ -1,18 +1,18 @@
 Citrix's GoToWebinar PHP Library
 ==========================
 
-The GoToWebinar PHP Library is typically used to perform operations like create registrant of webinar, get the login url, list webinars etc.  the PHP SDK greatly simplifies the process of authentication and authorizing users for your app. This lib needs JSON and  CURL PHP extension.
+The GoToWebinar PHP Library is typically used to perform operations like create registrant of webinar, get the login url, list webinars etc.  the PHP Library greatly simplifies the process of authentication and authorizing users for your app. This lib needs JSON and  CURL PHP extension.
 
-You will need an API key to initialize the SDK, which you can obtain from https://developer.citrixonline.com/sdm/myprofile. Apply for Developer Key on https://developer.citrixonline.com/sdm/set_app/Production. Be sure to check GoToWebinar as Product API. Then you will see the API key on https://developer.citrixonline.com/sdm/myprofile. If you are not registered, first register yourself on here https://developer.citrixonline.com/user/register. Then Apply for Developer Key. Be sure to check GoToWebinar as Product API. Then you will see the API key on https://developer.citrixonline.com/sdm/myprofile. 
+You will need an API key to initialize the Library, which you can obtain from https://developer.citrixonline.com/sdm/myprofile. Apply for Developer Key on https://developer.citrixonline.com/sdm/set_app/Production. Be sure to check GoToWebinar as Product API. Then you will see the API key on https://developer.citrixonline.com/sdm/myprofile. If you are not registered, first register yourself on here https://developer.citrixonline.com/user/register. Then Apply for Developer Key. Be sure to check GoToWebinar as Product API. Then you will see the API key on https://developer.citrixonline.com/sdm/myprofile. 
 
 Installing and Initializing
 -----
 
 To install the PHP Library, extract the downloaded files and copy the citrix.php from the directory to a directory on the server where you will host your app. Then, just include citrix.php wherever you want to use the PHP Library. 
 
-You will need an app id to initialize the SDK, which you can obtain from your developer profile https://developer.citrixonline.com/sdm/myprofile.
+You will need an app id to initialize the Library, which you can obtain from your developer profile https://developer.citrixonline.com/sdm/myprofile.
 
-First include the citrix.php in you code. You use the SDK by instantiating a new Facebook object with, at a minimum, your app id and app secret:
+First include the citrix.php in you code. You use the Library by instantiating a new Facebook object with, at a minimum, your app id and app secret:
 
 include "citrix.php";
 
