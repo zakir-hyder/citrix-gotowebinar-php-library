@@ -1,24 +1,30 @@
 {
-   "name":"teodortalov/Citrix-GoToWebinar-PHP-Library",
-   "authors":[
-      {
-         "name":"Teodor Talov",
-         "email":"teodor@talov.com"
-      }
-   ],
-   "require":{
-      "php":">=5.3.0"
-   },
-   "autoload":{
-      "files":[
-         "citrix.php"
-      ]
-   },
-   "minimum-stability":"dev",
-   "repositories":[
-      {
-         "type":"vcs",
-         "url":"https://github.com/teodortalov/Citrix-GoToWebinar-PHP-Library.git"
-      }
-   ]
+  "name":"zakir-hyder/Citrix-GoToWebinar-PHP-Library",
+  "description": "The GoToWebinar PHP Library is typically used to perform operations like create registrant of webinar, get the login url, list webinars etc.",
+	"homepage": "http://blog.jambura.com/2012/11/03/citrixs-gotowebinar-php-library/
+ ",
+	"keywords": ["Citrix", "GoToWebinar", "Library"],
+	"license": "MIT",
+	"authors": [
+    {
+	    "name": "Zakir Hyder",
+	    "email": "zakir.hyder@gmail.com",
+	    "homepage": "https://github.com/zakir-hyder"
+    }
+  ],
+	"repositories": [
+	  {
+	    "type": "vcs",
+	    "url": "https://github.com/zakir-hyder/Citrix-GoToWebinar-PHP-Library"
+	  }
+  ],
+	"require":{
+	  "php":">=5.3.0"
+	},
+	"autoload":{
+	  "files":[
+	     "citrix.php"
+	  ]
+	},
+	"minimum-stability":"dev"
 }
