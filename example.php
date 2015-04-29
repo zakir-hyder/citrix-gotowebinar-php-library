@@ -37,3 +37,10 @@ try
 }catch (Exception $e) {	
 	$citrix->pr($e->getMessage());
 }
+
+try
+{
+    $citrix->citrixonline_delete_registrant_of_webinar('webinar id', 'registrant id') ;
+}catch (Exception $e) { 
+    $citrix->pr($e->getMessage());
+}  

@@ -290,6 +290,29 @@ class Citrix
 		
 		return false;			
 	}
+
+	/**
+	* Deletes a registrant for given webinar
+	*
+	* @param string $webinar_id webinar id
+	* @param string $registrant_id registrant id
+	* Deletes registrant version view https://developer.citrixonline.com/api/gotowebinar-rest-api/apimethod/delete-registrant
+	*
+	*/
+    function citrixonline_delete_registrant_of_webinar($webinar_id=false, $registrant_id=false) 
+    {
+		if($webinar_id && $registrant_id)
+		{
+			$params = array();
+			
+			$params[CURLOPT_HTTPHEADER] = array('Accept: application/json', 'Content-Type: application/json', 'Authorization: OAuth oauth_token='.$this->access_token);
+			$params[CURLOPT_CUSTOMREQUEST] = "DELETE";
+			
+			return $this->make_request("https://api.citrixonline.com/G2W/rest/organizers/".$this->organizer_key."/webinars/{$webinar_id}/registrants", $params);
+		}
+		
+		return false;			
+	}	
 	
 	/**
 	* Returns the Current URL

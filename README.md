@@ -77,6 +77,16 @@ To get registrants of a webinar
     }
 
 
+To delete registrant of a webinar
+
+    try
+    {
+        $citrix->citrixonline_delete_registrant_of_webinar('webinar id', 'registrant id') ;
+    }catch (Exception $e) { 
+        $citrix->pr($e->getMessage());
+    }    
+
+
 $citrix->pr() is Print_r convenience function. I have created two example files - login.php and api example.php. login.php shows you how to the lib to authorize user with your app. example.php show all api calls.
 
 ## Contact
