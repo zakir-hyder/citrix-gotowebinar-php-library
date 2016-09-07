@@ -198,7 +198,7 @@ class Citrix
 			
 		$return_array = array();
 		
-		$reponse = json_decode($this->make_request("https://api.citrixonline.com/G2W/rest/organizers/".$this->organizer_key."/upcomingWebinars?oauth_token=".$this->access_token), true);
+		$reponse = json_decode(preg_replace('/("\w+"):(\d+(\.\d+)?)/', '\\1:"\\2"', $this->make_request("https://api.citrixonline.com/G2W/rest/organizers/".$this->organizer_key."/upcomingWebinars?oauth_token=".$this->access_token)), true);
 		
 		if(isset($reponse['int_err_code']) and $reponse['int_err_code'] != '')
 		{
@@ -363,6 +363,7 @@ class Citrix
 		$opts = self::$CURL_OPTS;
 		
 		$opts[CURLOPT_URL] = $url;	
+		$opts[CURLOPT_SSL_VERIFYPEER] = false;
 		
 		if(!empty($params))
 		{
