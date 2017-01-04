@@ -308,7 +308,7 @@ class Citrix
 			$params[CURLOPT_HTTPHEADER] = array('Accept: application/json', 'Content-Type: application/json', 'Authorization: OAuth oauth_token='.$this->access_token);
 			$params[CURLOPT_CUSTOMREQUEST] = "DELETE";
 			
-			return $this->make_request("https://api.citrixonline.com/G2W/rest/organizers/".$this->organizer_key."/webinars/{$webinar_id}/registrants", $params);
+			return $this->make_request("https://api.citrixonline.com/G2W/rest/organizers/".$this->organizer_key."/webinars/{$webinar_id}/registrants/{$registrant_id}", $params);
 		}
 		
 		return false;			
