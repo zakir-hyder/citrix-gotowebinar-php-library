@@ -1,3 +1,5 @@
+[![Latest Stable Version](https://poser.pugx.org/zakir-hyder/citrix-gotowebinar-php-library/v/stable)](https://packagist.org/packages/zakir-hyder/citrix-gotowebinar-php-library)[![License](https://poser.pugx.org/zakir-hyder/citrix-gotowebinar-php-library/license)](https://packagist.org/packages/zakir-hyder/citrix-gotowebinar-php-library)
+
 Citrix's GoToWebinar PHP Library
 ==========================
 
