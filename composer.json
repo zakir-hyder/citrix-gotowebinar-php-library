@@ -1,5 +1,5 @@
 {
-  "name": "zakir-hyder/Citrix-GoToWebinar-PHP-Library",
+  "name": "zakir-hyder/citrix-gotowebinar-php-library",
   "description": "The GoToWebinar PHP Library is typically used to perform operations like create registrant of webinar, get the login url, list webinars etc.",
 	"homepage": "http://blog.jambura.com/2012/11/03/citrixs-gotowebinar-php-library/",
 	"keywords": ["Citrix", "GoToWebinar", "Library"],
