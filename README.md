@@ -91,14 +91,9 @@ To delete registrant of a webinar
 
 $citrix->pr() is Print_r convenience function. I have created two example files - login.php and api example.php. login.php shows you how to the lib to authorize user with your app. example.php show all api calls.
 
-## Contact
-
-Follow [@jambura.blog](https://www.facebook.com/jambura.blog) on Facebook 
-
 ### Creators
 
 [Zakir Hyder](https://github.com/zakir-hyder)  
-[@jambura.blog](https://www.facebook.com/jambura.blog)
 
 ## License
 
